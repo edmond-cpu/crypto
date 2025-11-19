@@ -15,7 +15,7 @@ const Market = () => {
       const options = {
         method: 'GET',
         headers: {
-          'x-rapidapi-key': import.meta.env.RAPIDAPI_KEY,
+          'x-rapidapi-key': import.meta.env.VITE_RAPIDAPI_KEY,
           'x-rapidapi-host': 'coinranking1.p.rapidapi.com'
         }
       };

@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import CoinDetails from './coindetails';
 
 const Market = () => {
     const navigate = useNavigate();

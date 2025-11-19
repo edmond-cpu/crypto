@@ -5,6 +5,7 @@ const Market = () => {
     const navigate = useNavigate();
     const [trades, setTrades] = useState([]);
     const [error, setError] = useState(null);
+const apiKey = import.meta.env.VITE_RAPIDAPI_KEY;
 
 
   useEffect (() => {
@@ -15,7 +16,7 @@ const Market = () => {
       const options = {
         method: 'GET',
         headers: {
-          'x-rapidapi-key': import.meta.env.VITE_RAPIDAPI_KEY,
+          'x-rapidapi-key': apiKey,
           'x-rapidapi-host': 'coinranking1.p.rapidapi.com'
         }
       };

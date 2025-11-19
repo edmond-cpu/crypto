@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 const CoinDetails = () => {
   const { uuid } = useParams();
   const [coin, setCoin] = useState(null);
+const apiKey = import.meta.env.VITE_RAPIDAPI_KEY;
 
   useEffect(() => {
     const fetchCoinDetails = async () => {
@@ -11,7 +12,7 @@ const CoinDetails = () => {
       const options = {
         method: "GET",
         headers: {
-          "x-rapidapi-key": import.meta.env.VITE_RAPIDAPI_KEY,
+          "x-rapidapi-key": apiKey,
           "x-rapidapi-host": "coinranking1.p.rapidapi.com",
         },
       };

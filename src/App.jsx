@@ -1,11 +1,10 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './pages/home';
 import Navbar from './components/Navbar';
 import './index.css';
 import Market from './pages/market';
 import Contact from './pages/contact';
-import CoinDetails from './pages/coindetails';
+import CoinDetails from './pages/CoinDetails';
 
 function App() {
   return(
